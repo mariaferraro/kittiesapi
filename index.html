@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">    
+    <title>API for Kitties lovers</title>
+</head>
+<body>
+        <h1>Your everyday random kitties</h1>
+
+        <span id="error"></span>
+
+<section class="randomCats">
+    <h2>Random Kitties</h2>
+    <div class="randomCats-img">
+        <article>
+            <img id="img1" alt="Random Cat Picture from an API"/>
+            <button id="btn1" class="fav">
+                <svg version="1.1" id="Heart" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></svg>
+            </button>  
+        </article>
+        <article>
+            <img id="img2" alt="Random Cat Picture from an API"/>
+            <button id="btn2" class="fav">
+                <svg version="1.1" id="Heart" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></svg>
+            </button>  
+        </article>
+        <article>
+            <img id="img3" alt="Random Cat Picture from an API"/>
+            <button id="btn3" class="fav">
+                <svg version="1.1" id="Heart" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="10px" y="10px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514C512,93.417,453.532,30,376,30z"/></g></svg>
+            </button>  
+        </article>  
+    </div>
+
+    <button onclick="loadRandomMichis()" class="btn" role="button"><span class="text">Reload</span></button>
+
+</section>
+
+<section id="uploadSection">
+    <h2>Upload your own Kittie</h2>
+
+    <form id="uploadingForm">
+        <input type="file" id="file" name="file" accept=".jpg, .png">
+        <button type="button" id="" class="btn" onclick="uploadPhoto()">Upload</button>
+    </form>
+</section>
+
+<section class="randomCats">
+    <h2>Your Favorite Kitties</h2>
+    <div id="favoriteCats" class="favoriteCats-img">
+
+    </div> 
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
